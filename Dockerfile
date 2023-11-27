@@ -1,4 +1,4 @@
-FROM    alpine:3.14
+FROM    alpine:3.18
 
 RUN     apk --no-cache add --update bash sudo nano sudo zip bzip2 fontconfig wget curl 'su-exec>=0.2' busybox mc nano rsync lftp mysql-client bash sudo grep gawk ncurses-terminfo curl sed
 RUN	deluser xfs && delgroup www-data &&  addgroup -g 33 -S www-data
